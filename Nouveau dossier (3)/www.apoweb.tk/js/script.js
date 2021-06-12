@@ -1,24 +1,25 @@
 $( document ).ready(function() {
 
-    // Hero Section FUll Height
+    // Hauteur de la section du héros
     $(function(){
-    	var windowH = $(window).height();
-    	var wrapperH = $('.hero').height();
+    	var windowH = $(window).height() ;
+    	var wrapperH = $('.hero').height() ;
     	if(windowH > wrapperH) {                            
-    		$('.hero').css({'height':($(window).height())+'px'});
+    		$('.hero').css({hauteur' :($(window).height())+'px'}) ;
     	}                                                                               
     	$(window).resize(function(){
-    		var windowH = $(window).height();
-    		var wrapperH = $('.hero').height();
-    		var differenceH = windowH - wrapperH;
-    		var newH = wrapperH + differenceH;
-    		var truecontentH = $('#truecontent').height();
+    		var windowH = $(window).height() ;
+    		var wrapperH = $('.hero').height() ;
+    		var differenceH = windowH - wrapperH ;
+    		var newH = wrapperH + differenceH ;
+    		var truecontentH = $('#truecontent').height() ;
     		if(windowH > truecontentH) {
-    			$('.hero').css('height', (newH)+'px');
+    			$('.hero').css('height', (newH)+'px') ;
     		}
 
     	})          
-    });
+    }) ;
 
 
-});
+}) ;
+© 2021 GitHub, Inc.
