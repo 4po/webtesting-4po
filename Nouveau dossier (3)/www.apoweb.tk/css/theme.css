@@ -1,79 +1,372 @@
 html {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
+	-webkit-box-sizing : border-box ;
+	-moz-box-sizing : border-box ;
+	box-sizing : border-box ;
+	scroll-behavior : smooth ;
 }
 
 *,
 *::before,
 *::after {
-	-webkit-box-sizing: inherit;
-	-moz-box-sizing: inherit;
-	box-sizing: inherit;
+	-webkit-box-sizing : inherit ;
+	-moz-box-sizing : hérité ;
+	box-sizing : inherit ;
 }
 
 body {
-	font-size: 1.0em; /* currently ems cause chrome bug misinterpreting rems on body element */
-	line-height: 1.6;
-	font-weight: 400;
-	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #222; 
+	font-size : 1.0em ; /* actuellement ems cause un bug de chrome qui interprète mal rems sur l'élément body */
+	hauteur de ligne : 1.6 ;
+	font-weight : 400 ;
+	font-family : "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif ;
+	couleur : #222 ; 
 }
 
-/* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Typographie
+-------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
-	margin-top: 0;
-	margin-bottom: 2rem;
-	font-weight: 300; 
+	margin-top : 0 ;
+	margin-bottom : 2rem ;
+	font-weight : 300 ; 
 }
-h1 { font-size: 2.0rem; line-height: 1.2; }
-h2 { font-size: 1.8rem; line-height: 1.25;}
-h3 { font-size: 1.6rem; line-height: 1.3;}
-h4 { font-size: 1.4rem; line-height: 1.35;}
-h5 { font-size: 1.2rem; line-height: 1.5;}
-h6 { font-size: 1.0rem; line-height: 1.6;}
+h1 { font-size : 2.0rem ; line-height : 1.2 ; }
+h2 { taille de la police : 1.8rem ; hauteur de la ligne : 1.25;}
+h3 { taille de la police : 1.6rem ; hauteur de la ligne : 1.3;}
+h4 { taille de la police : 1.4rem ; hauteur de la ligne : 1.35;}
+h5 { taille de la police : 1.2rem ; hauteur de la ligne : 1.5;}
+h6 { taille de la police : 1.0rem ; hauteur de la ligne : 1.6;}
 
 
 p {
-	margin-top: 0; 
+	margin-top : 0 ; 
 }
 
 
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Liens
+-------------------------------------------------- */
 a {
-	color: #1EAEDB; 
+	couleur : #1EAEDB ; 
 }
 a:hover {
-	color: #0FA0CE; 
+	color : #0FA0CE ; 
 }
 
 img {
-	width: 100%;
-	height: auto;
+	largeur : 100% ;
+	hauteur : auto ;
 }
 
 section {
-	margin: 10rem auto;
+	margin : 10rem auto ;
 }
 
 button {
-	background-color: #000;
-	border: none;
-	border-radius: 3px;
-	color: #fff;
-	height: auto;
-	padding: 8px 37px;
-	font-weight: 400;
-	text-transform: uppercase;
-	text-decoration: none;
-	text-align: center;
-	vertical-align: middle;
-	transition: all 0.5s ease;
-	cursor: pointer;
-	font-size: 0.8rem;
+	background-color : #000 ;
+	border : none ;
+	border-radius : 3px ;
+	couleur : #fff ;
+	hauteur : auto ;
+	padding : 8px 37px ;
+	font-weight : 400 ;
+	text-transform : uppercase ;
+	text-decoration : none ;
+	text-align : center ;
+	vertical-align : middle ;
+	transition : all 0.5s ease ;
+	curseur : pointeur ;
+	font-size : 0.8rem ;
+}
+
+
+button:hover, button:focus {
+	background-color : #fff ;
+	color : #000 ;
+}
+
+button.light {
+	background-color : #fff ;
+	couleur : #000 ;
+}
+
+button.light:hover, button.light:focus {
+	background-color : #000 ;
+	color : #fff ;
+}
+
+.margin-bottom {
+	margin-bottom : 5rem ;
+}
+
+.margin-bottom-small {
+	margin-bottom : 1rem ;
+}
+
+.padding-small {
+	padding : 1rem ;
+}
+
+hr {
+	border : 0 ;
+	border-top : 1px solid #eee ;
+}
+
+.section-title {
+	margin-bottom : 70px ;
+	text-transform : uppercase ;
+}
+
+
+.flex {affichage : flex;}
+
+
+.navigation-bar {
+	position : absolute ;
+	z-index : 999 ;
+	width : 100% ;
+
+}
+
+.navigation-bar .logo{
+	largeur maximale : 180px ;
+	display : inline-block ;
+	padding : 1rem ;
+}
+
+.navigation-bar nav{
+	display : inline-block ;
+	largeur : 100% ;
+}
+
+
+.navigation-bar nav ul li{
+	display : inline-block ;
+}
+
+.navigation-bar nav a{
+	color : #fff ;
+	text-decoration : none ;
+	margin-right : 1rem ;
+}
+
+
+.hero {
+	background-position : center ;
+	background-repeat : no-repeat ;
+	background-size : cover ;
+	position : relative ;
+	background-color : #000 ;
+	couleur : #fff ;
+	overflow : hidden ;
+}
+
+.hero h1 {
+	margin : 0 ;
+	opacité : .9 ;
+}
+
+
+.hero-text {
+	padding : 25px ; 
+	text-align : center ;
+	width : 100% ;
+}
+
+.hero-text p {
+	margin : 0 ;
+	opacité : .7 ;
+}
+
+.highlight {
+	font-style : italic ;
+}
+
+.author {
+	font-size : 0.8rem ; 
+}
+
+.team .team-name {
+	text-align : center ;
+}
+
+.team .nom-de-l'équipe .position{
+	opacité : .7 ;
+}
+
+.team .team-icon {
+	max-width : 16px ;
+}
+
+
+/* Hover */
+
+.hover-outer-box {
+	position : relative ;
+	display : flex ;
+	align-content : stretch ;
+	align-items : stretch ;
+}
+
+.hover-outer-box .hover-inner-box {
+	background : rgba(0, 0, 0, 0.9) ;
+	height : 100% ;
+	width : 100% ;
+	opacité : 0 ;
+	top : 0 ;
+	gauche : 0 ;
+	position : absolue ;
+	padding : 0 ;
+	transition : opacité .5s ;
+	couleur : #fff ;
+	affichage : flex ;
+	align-items : center ;
+}
+
+.hover-outer-box:hover .hover-inner-box {
+	opacité : .9 ;
+	transition : opacité .5s ;
+}
+
+.hover-outer-box .hover-inner-box .hover-content{
+	text-align : center ;
+	width : 100% ;
+	padding : 1rem ;
+}
+
+
+/* Services */
+
+.services .icon-row {
+	padding : 30px 0 ;
+}
+
+.services .icon {
+	max-width : 64px ;
+}
+
+
+/* cta */
+
+
+.cta {
+	couleur de fond : #000 ;
+	padding : 60px 0 ;
+	color : #fff ;
+}
+
+
+.cta .display {
+	margin-top : -100px ;
+}
+
+/* blurbs */
+
+.blurbs .icon {
+	max-width : 64px ;
+}
+
+.blurbs h3 {
+	margin-bottom : 1rem ;
+}
+
+
+/* newsletter */
+
+.newsletter{
+	couleur de fond : #eee ;
+	padding : 60px 0 ;
+}
+
+.newsletter h2 {
+	font-size : 1.2rem ;
+	margin-bottom : 1rem ;
+	text-transform : uppercase ;
+}
+
+
+
+.newsletter form{
+	align-content-content : center ;
+}
+
+.newsletter input {
+	width : 150px ;
+	margin-right : 1rem ;
+	background-color : #fff ;
+}
+
+
+/* contact */
+
+
+.contact .col-md {
+	padding : 1rem ;
+}
+
+/* formulaires */
+
+input, textarea {
+	background-color : #eee ;
+	largeur : 100% ;
+	padding : 1rem ;
+	border : 0 ;
+	border-radius : 3px ;
+	-webkit-box-sizing : border-box ;
+	-moz-box-sizing : border-box ;
+	box-sizing : border-box ;
+}
+
+[type="button"], [type="reset"], [type="submit"] {
+	-webkit-appearance : button ;
+	background-color : #000 ;
+	color : #fff ;
+	curseur : pointeur ;
+	transition-property : background ;
+	transition-duration : 0.5s ;
+	transition-timing-function : ease ;
+
+}
+
+[type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover {
+	-webkit-appearance : button ;
+	background-color : #000 ;
+	color : #fff ;
+	curseur : pointeur ;
+	couleur de fond : #fff ;
+	couleur : #000 ;
+}
+
+/* pied de page */
+
+footer {
+	background-color : #eee ;
+	padding : 5rem 0 ;
+}
+
+
+footer ul{
+	padding : 0 ;
+}
+
+footer li {
+	list-style : none ;
+}
+
+
+footer li a{
+	padding : 0 ;
+	couleur : #000 ;
+	Décoration du texte : none ;
+}
+
+
+.secondary-footer {
+	background-color : #e1e0e0 ;
+	padding : 1rem ;
+	margin : 0 auto ;
+}
+
+.secondary-footer p{
+	margin : 0 ;
+	font-size : 0.8rem ;
 }
 
 
